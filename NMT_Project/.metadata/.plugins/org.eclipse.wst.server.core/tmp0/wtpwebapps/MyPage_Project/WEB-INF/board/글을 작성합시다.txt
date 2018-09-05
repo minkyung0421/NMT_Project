@@ -1,0 +1,1 @@
+<table class='type04'><tr><th scope='row' style='height:px;'>글제목</th><td>글을 작성합시다</td></tr><tr><th scope='row' style='height:40px;'>닉네임<td>민경</td></tr><tr><th scope='row' style='height:200px;'>글내용<td>안녕하세요</td></tr></table>

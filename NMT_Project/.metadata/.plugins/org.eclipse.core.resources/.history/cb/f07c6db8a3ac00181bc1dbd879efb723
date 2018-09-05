@@ -1,0 +1,135 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>List</title>
+<style>
+
+      .body{
+
+        width:1100px;
+
+        margin:50px auto 0;
+
+        text-align: center;
+
+      }
+
+
+
+      .body, .body td, .body th{ border-collapse: collapse; border:1px solid black; box-sizing: border-box;}
+
+      .body th{background-color: #e3e3e3;}
+
+      .Btn{margin:30px auto 0; width:100px;}
+      
+      button{
+        background:crimson;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:30px;
+        font-size:0.7em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      button:hover{
+        background:#fff;
+        color:crimson;
+      }
+      button:before,button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: crimson;
+        transition:400ms ease all;
+      }
+      button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      button:hover:before,button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+
+
+      
+</style>
+</head>
+<body>
+<%
+
+	Class.forName("com.mysql.jdbc.Driver"); //mysql연동
+	String url = "jdbc:mysql://localhost:3306/blog"; //mysql 데이터베이스명
+	String mysql_id = "root"; //mysql id
+	String mysql_pw = "1234"; //mysql pw
+	int total = 0;
+	
+	try{
+		Connection conn = DriverManager.getConnection(url, mysql_id, mysql_pw);
+		Statement stmt = conn.createStatement();
+		String totalSql = "select count(*) from board;"; //총 글 갯수
+		ResultSet rs = stmt.executeQuery(totalSql);
+		
+		if(rs.next()){
+			total = rs.getInt(1); 
+		}
+		
+		String listSql = "select board_no, board_title, board_date from board;"; //전체리스트
+		rs = stmt.executeQuery(listSql);
+		
+		//오류가 없을 시
+		%>
+		<table class = "body">
+			<tr>
+				<th>글번호</th>
+				<th>글제목</th>
+				<th>작성일자</th>
+			<tr>
+			<%
+			if(total==0){
+			%>
+			<tr>
+				<td>게시글이 존재하지 않습니다.</td>
+			</tr>
+			<%
+			//total이 0이 아닐때
+			}else{
+				while(rs.next()){
+					int board_no = rs.getInt(1);
+					String board_title = rs.getString(2);
+					String board_date = rs.getString(3);
+					
+					//리스트 출력
+			%>
+			<tr>
+				<td><%=board_no %></td>
+				<td><a href="Detail.jsp?board_no=<%=board_no%>"><%= board_title %></a></td>
+				<td><%= board_date %></td>
+			</tr>
+			<%		
+				}
+			}
+			rs.close();
+			conn.close();
+			stmt.close();
+	}catch(SQLException e){
+		out.println(e.toString());
+	}
+%>
+</table>
+
+<a href = "Write.jsp"><button style = "margin-top:3%;s">글쓰기</button></a>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Moana</title>
+<link rel="stylesheet" type="text/css" href="moana.css">
+</head>
+<body>
+<section class="section_menu">
+            <a href = "../list.jsp"> <button>자유게시판</button></a>
+        <article class="menu">
+            <a href = "../index.jsp"><p class="index">Index</p></a>
+            <ul class="mylist">
+                <li class = "snow_link"><a href = "../snow/snow_1.jsp" style="color:black">
+                        <label>Snow White</label>
+                    </a>
+                </li>
+                <li class = "mermaid_link">
+                    <a href="../mermaid/mermaid_1.jsp" style="color:black">
+                        <label>The Little Mermaid</label>
+                    </a>
+                </li>
+                <li class = "christmas_link"><a href = "../christmas/christmas_1.jsp" style = "color:black"><label>The Nightmare before Christmas</label></a></li>
+                <li class="rata_link">
+                    <a href="../rata/rata_1.jsp" style="color:black">
+                        <label>Ratatouille</label>
+                    </a>
+                </li>
+                <li class = "inside_link">
+                    <a href="../inside/inside_1.jsp" style="color:black">
+                        <label>Inside Out</label>
+                    </a>
+                </li>
+                <li class = "moana_link">
+                    <a href="../moana/moana_1.jsp" style="color:black">
+                        <label>Moana</label>
+                    </a>
+                </li>
+                <li class = "koko_link"><a href = "../koko/koko_1.jsp" style = "color:black"><label>Coco</label></a></li>
+            </ul>
+        </article>
+    </section>
+
+    <section class = "section_content">
+        <article>
+            <img src = "../moana_img/moa.png" width="15%" height="25%" align="left" style = "margin-right: 2%; margin-bottom: 3%">
+            <label style = "font-size:20pt;">모아나(MOANA)</label><br><br>
+            다혈질이고 한다면 하는 성격이 특징. 또한 어린 나이에도 불구하고 대범하고 당찬 면, 그리고 상당한 책임의식을 지니고 있다.
+            이런 류의 캐릭터가 대개 자신의 꿈을 반대하는 부모에게 완강히 반항한다던지 해서 부모와 사이가 좋지만은 않은 것에 비해 모아나는 어느 정도 자라나 추장으로서의 사명을 받아들이려 하고
+             아버지 투이도 그런 딸을 자랑스러워 하며 웬만해서는 부드럽게 타이르려고 한다. 
+            그러던 어느 날 섬에 기근의 징조가 보이기 시작했고, 
+            할머니 탈라의 말에 따라 숨겨진 동굴에서 북을 치고 조상들의 환영을 본 뒤 스스로의 사명을 자각하고 테 피티의 심장을 지니고 마우이를 찾아 모험을 떠난다.
+
+        </article>
+        <article style = "float: left">
+            <a href = "moana_3.jsp"><article style="float: right; margin-top:10%"> <label style="font-weight: 800">STORY</label><img src = "../snow_img/nn.png"></article></a>
+            <img src = "../moana_img/maui.png" width="20%" height="10%" align="right"  style = "margin-left: 2%; margin-bottom: 3%">
+            <label style = "float: right; font-size:20pt;">마우이(MAUI)</label><br><br>
+            모아나의 두 주역 중 한 명으로, 모아나와 함께 테피티를 찾으러 가는 모험을 하게 되는 반인반신 영웅이다.이 사람과 관계 없다 작중에서는 바람과 바다의 반신이라고 칭해진다.
+            곱슬진 검은 장발머리와 근육질 거구, 온 몸 위에 그려진 문신이 인상적인 남성, 엄지 두 개 만으로 하늘을 들어올리고, 지하세계에서 불을 훔쳐다 인간들에게 제공하고, 
+            엄청나게 빨리 움직였던 태양의 속도를 늦추고, 너무 높은 곳에 있던 바람을 끌어당겨주고, 섬들을 바다 위로 낚아올리고, 
+            장어 내장을 땅에 묻어 코코넛을 자라나게 하는 등 무수히 많은 업적을 이루어낸 전설적인 영웅이다.
+            
+           
+        </article>
+        <article>
+            <img src = "../moana_img/tefiti.png" width="25%" height="35%" align="left" style = "margin-right: 2%;">
+            <img src = "../moana_img/teka.jpg" width="15%" height="25%" align="left" style = "margin-right: 2%;">
+            <br><br><br><br><br>
+            <label style = "font-size:20pt;">테 피티/테 카(TE FITI/TE KA)</label><br><br>
+            불과 땅의 악마이며, 전신이 돌과 용암으로 이루어진 거인 형상의 화산섬 괴물이다. 
+            테 피티의 심장을 노리는 괴물들 중에서도 가장 강력하고 거대한 존재이다.테 피티의 심장을 마우이가 훔쳐 도망갈 때 처음으로 나타났다.
+            테 카의 정체는 분노로 인해 흉측하게 변한 창조신 테 피티였다.
+        </article>
+    </section>
+    
+    <section>
+           
+    </section>
+    <footer>Copyright&copy;2018 3517 최민경 All rights reserved. </footer>
+</body>
+</html>

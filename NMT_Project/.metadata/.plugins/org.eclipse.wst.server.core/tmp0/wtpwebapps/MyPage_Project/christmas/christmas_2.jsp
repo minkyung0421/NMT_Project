@@ -1,0 +1,84 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Nightmare before Christmas</title>
+<link rel="stylesheet" type="text/css" href="christmas.css">
+</head>
+<body>
+ <section class="section_menu">
+        <article class="menu">
+                <a href = "../list.jsp"><button>자유게시판</button></a>
+            <a href = "../index.jsp"><p class="index">Index</p></a>
+            <ul class="mylist">
+                <li class = "snow_link"><a href = "../snow/snow_1.jsp" style="color:black">
+                        <label>Snow White</label>
+                    </a>
+                </li>
+                <li class = "mermaid_link">
+                    <a href="../mermaid/mermaid_1.jsp" style="color:black">
+                        <label>The Little Mermaid</label>
+                    </a>
+                </li>
+                <li class = "christmas_link"><a href = "../christmas/christmas_1.jsp" style = "color:black"><label>The Nightmare before Christmas</label></a></li>
+                <li class="rata_link">
+                    <a href="../rata/rata_1.jsp" style="color:black">
+                        <label>Ratatouille</label>
+                    </a>
+                </li>
+                <li class = "inside_link">
+                    <a href="../inside/inside_1.jsp" style="color:black">
+                        <label>Inside Out</label>
+                    </a>
+                </li>
+                <li class = "moana_link">
+                    <a href="../moana/moana_1.jsp" style="color:black">
+                        <label>Moana</label>
+                    </a>
+                </li>
+                <li class = "koko_link"><a href = "../koko/koko_1.jsp" style = "color:black"><label>Coco</label></a></li>
+            </ul>
+        </article>
+    </section>
+
+    <section class = "section_content">
+        <article>
+            <img src = "../christmas_img/jack.png" width="10%" height="13%" align="left" style = "margin-right: 2%;">
+            <label style = "font-size:20pt;">잭 스켈링턴(JACK SKELINGTON)</label><br><br>
+            호박의 왕(The Pumpkin King)이라고도 불리는 할로윈 마을 최고의 인기 스타. 신사적이고 품위있는 해골
+            일단 한번 하자고 마음 먹으면 주위 사람들이 뜯어말려도 무시하고 그대로 독단적으로 일을 벌이는 성격, 
+            자신이 목격한 크리스마스 마을의 분위기에 반해 이번에는 할로윈 대신 크리스마스를 즐겨보자고 마을 주민들을 진두 지휘하며 크리스마스 준비를 하게 만든다던가, 
+            계시를 받은 샐리가 당장이라도 그만둬야 한다고 말려도 쿨하게 무시하고 산타 의상의 제작 임무를 떠넘긴다던가, 
+            록과 쇼크, 배럴을 시켜서 산타를 납치하게 하는 등 온갖 짓을 저지르고는 마침내 크리스마스를 충격과 공포의 날로 뒤바꾸는 대형사고를 치고 만다. 
+        </article>
+        <article style = "float: left">
+            <a href = "christmas_3.jsp"><article style="float: right; margin-top:10%"> <label style="font-weight: 800">STORY</label><img src = "../snow_img/nn.png"></article></a>
+            <img src = "../christmas_img/sally.png" width="13%" height="15%" align="right"  style = "margin-left: 2%;">
+            <label style = "float: right; font-size:20pt;">샐리(SALLY)</label><br><br>
+            핑켈슈타인 박사가 만든 헝겊 인형. 시체나 기계를 엮어 만든 것이 아닌, 속에 가랑잎을 채운 봉제인형이다.
+            마음 속 깊이 잭을 흠모하고 있으나 잭이 너무 유명인사인 관계로 감히 다가서지 못한다. 
+            언제나 먼발치에서 잭을 지켜보며 짝사랑으로 속앓이를 하지만 잭은 전혀 눈치채지 못한다.
+            크리스마스 전 불행한 전조를 느끼고 이후 마을 주민들중 유일하게 잭을 말리며 크리스마스 준비를 포기하도록 종용하지만 실패로 돌아간다. 
+
+            
+           
+        </article>
+        <article>
+            <img src = "../christmas_img/oogie.png" width="13%" height="15%" align="left" style = "margin-right: 2%;">
+            <br><br><br><br><br>
+            <label style = "font-size:20pt;">우기부기(OOGIE BOOGIE)</label><br><br>
+            지저분한 푸댓자루로 만들어진 뚱땡이 악당. 
+            자타공인 할로윈 마을에서 가장 사악한 인물이다. 보다 정확히 말하자면, 이 녀석만이 유일하게 악의를 가지고 행동한다.
+            록과 쇼크, 배럴의 세 악동을 부하로 두고 나쁜 짓을 일삼는다. 시장조차도 무서워하는 것으로 보아 할로윈 마을에서조차 악명이 높은 듯. 
+            늘 도박하는 것을 좋아하며 세 악동이 납치해온 산타를 납치 감금 및 고문하는 최종 보스. 벌레를 흡입해서 먹고 사는데, 나중에 밝혀지지만 사실 그 정체는 온갖 벌레들의 군집체이다.
+        </article>
+    </section>
+    
+    <section>
+           
+    </section>
+    <footer>Copyright&copy;2018 3517 최민경 All rights reserved. </footer>
+</body>
+</html>

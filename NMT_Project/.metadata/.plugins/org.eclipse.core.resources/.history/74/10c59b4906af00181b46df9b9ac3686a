@@ -1,0 +1,45 @@
+<%@page import="java.io.PrintWriter"%>
+<%@page import="java.util.Date"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>게시판</title>
+</head>
+<body>
+<%
+	request.setCharacterEncoding("UTF-8");
+	String board_title = request.getParameter("board_title");
+	String nicname = request.getParameter("nicname");
+	String board_content = request.getParameter("board_content"); 
+	Date date = new Date();
+	Long time = date.getTime();
+	String filename = board_title + ".txt";
+	
+	String result;
+	
+	PrintWriter writer = null;
+	
+	try{
+		String filePath = application.getRealPath("/WEB-INF/board/" + filename);
+		writer = new PrintWriter(filePath);
+		writer.printf("제목 <br> %s %n <br>", board_title);
+		writer.printf("작성자 <br> %s %n <br>", nicname);
+		writer.printf("내용 <br>");
+		writer.println(board_content);
+	 
+		writer.flush();
+		result = "ok";
+	}catch(Exception e){
+		out.println("오류발생");
+		result = "fail";
+	}
+	
+	response.sendRedirect("result.jsp?send="+result);
+		
+       
+%>
+</body>
+</html>

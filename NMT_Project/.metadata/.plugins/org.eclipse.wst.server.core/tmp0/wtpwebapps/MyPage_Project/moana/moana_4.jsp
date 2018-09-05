@@ -1,0 +1,78 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Moana</title>
+ <link rel="stylesheet" type="text/css" href="moana.css">
+    <style>
+      .song:hover{
+          color: mediumturquoise;
+          font-weight: 800;
+      }
+    </style>
+
+</head>
+<body>
+<section class = "section_menu">
+                <a href = "../list.jsp"> <button>자유게시판</button></a>
+               <article class = "menu">
+                <a href = "../index.jsp"><p class = "index">Index</p></a>
+                            <ul class = "mylist">
+                                <li class = "snow_link"><a href = "../snow/snow_1.jsp" style = "color:black"><label>Snow White</label></a></li>
+                                <li class = "mermaid_link"><a href = "../mermaid/mermaid_1.jsp" style = "color:black"><label>The Little Mermaid</label></a></li>
+                                <li class = "christmas_link"><a href = "../christmas/christmas_1.jsp" style = "color:black"><label>The Nightmare before Christmas</label></a></li>
+                                <li class = "rata_link"><a href = "../rata/rata_1.jsp" style = "color:black"><label>Ratatouille</label></a></li>
+                                <li class = "inside_link"><a href = "../inside/inside_1.jsp" style = "color:black"><label>Inside Out</label></a></li>
+                                <li class = "moana_link"><a href = "../moana/moana_1.jsp" style = "color:black"><label>Moana</label></a></li>
+                                <li class = "koko_link"><a href = "../koko/koko_1.jsp" style = "color:black"><label>Coco</label></a></li>
+                            </ul>
+                        </article>
+        
+               
+            </section>
+
+
+            
+
+               <section  class = "section_content" style = "margin-top: 3%">
+                    <article>
+                            <a href="../moana_img/Aulii Cravalho - How Far Ill Go.mp4">
+                                <img src="../moana_img/mu.jpg" width="30%" height="20%" align="left">
+                           </a>
+                        <a href = "https://www.youtube.com/watch?v=SXKlJuO07eM"  class = "song"><label style = "margin: 1%; font-size:20pt">How Far I'll Go</label></a>
+                        <br><br>
+                        &nbsp; &nbsp;"See the line where the sky meets the sea? It calls me"<br>
+
+                        &nbsp; &nbsp;&nbsp;하늘과 바다가 만나는 저 선이 보여? 날 부르고 있어<br>
+                    </article>
+              </section>
+              <!-- https://youtu.be/79DijItQXMM -->
+            <section  class = "section_content" style = "margin-top: 3%">
+                  <article>
+                        <a href="../moana_img/Dwayne Johnson - Youre Welcome (From Moana).mp4">
+                            <img src="../moana_img/muma.jpg" width="30%" height="20%" align="left">
+                       </a>
+                      <a href = "https://youtu.be/79DijItQXMM"  class = "song"><label style = "margin: 2%; font-size:20pt">You're Welcome</label></a>
+                      <br><br>
+                      &nbsp; &nbsp;"What can I say except 'you're welcome'"<br>
+                      &nbsp; &nbsp;&nbsp; 뭐라고 말하고 싶은지 알아 '천만에'
+                  </article>
+            </section>
+            <!-- https://youtu.be/93lrosBEW-Q -->
+            <section  class = "section_content" style = "margin-top: 3%">
+                    <article>
+                            <a href="../moana_img/Jemaine Clement - Shiny (From Moana).mp4">
+                                <img src="../moana_img/mumu.jpg" width="30%" height="30%" align="left">
+                           </a>
+                        <a href = "https://youtu.be/93lrosBEW-Q" class = "song"><label style = "margin: 2%; font-size:20pt">Shiny</label></a>
+                        <br><br>
+                        &nbsp; &nbsp;"I'd rather be shiny Like a treasure from a sunken pirate wreck"<br>
+                        &nbsp; &nbsp;&nbsp;난 차라리 빛날래 바다 밑 해적 난파선의 보물처럼 찬란하게
+                    </article>
+              </section>
+            
+              <footer>Copyright&copy;2018 3517 최민경 All rights reserved. </footer>
+</body>
+</html>
