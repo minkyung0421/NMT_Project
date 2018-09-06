@@ -14,6 +14,7 @@
     </style>
 </head>
 <body>
+
    <section class = "section_menu">
                 <a href = "../list.jsp"> <button>자유게시판</button></a>
                <article class = "menu">

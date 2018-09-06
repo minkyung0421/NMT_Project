@@ -11,7 +11,7 @@
 	String str = request.getParameter("send");
 
 	if(str.equals("ok")){
-		out.println("<font color = 'purple'><b>게시물</b></font>이 저장되었습니다");
+		out.println("<center><font color = 'purple' size = '50pt'><b>게시물</b></font>이 저장되었습니다</center>");
 	}else{
 		out.println("<font color = 'purple'><b>게시물</b></font>을 저장할 수 없습니다");
 	}

@@ -5,6 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>The Little Mermaid</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
  <link rel="stylesheet" type="text/css" href="mermaid.css">
    <style>
             table {
@@ -17,9 +19,41 @@
            padding: 10px;
          }
        
+a.jcm-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    font-size: 40px;
+    background-color:white;
+    z-index: 999;
+    display: none;
+}
            </style>
 </head>
 <body>
+<a href="#" class="jcm-top hidden-xs hidden-sm"><img src = "../christmas_img/goto.png" width="50px" height="50px"></a>
+<script>
+
+$( document ).ready( function() {
+$( window ).scroll( function() {
+if ( $( this ).scrollTop() > 200 ) {
+$( '.jcm-top' ).fadeIn();
+} else {
+$( '.jcm-top' ).fadeOut();
+}
+} );
+$( '.jcm-top' ).click( function() {
+$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+return false;
+} );
+} );
+
+</script>
  <section class = "section_menu">
                 <a href = "../list.jsp"> <button>자유게시판</button></a>
                <article class = "menu">

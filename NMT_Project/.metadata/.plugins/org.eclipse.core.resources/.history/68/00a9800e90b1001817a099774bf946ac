@@ -1,0 +1,77 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Coco</title>
+<link rel="stylesheet" type="text/css" href="koko.css">
+ <style>
+      .song:hover{
+          color: gold;
+          font-weight: 800;
+      }
+    </style>
+</head>
+<body>
+   <section class = "section_menu">
+                <a href = "../list.jsp"> <button>자유게시판</button></a>
+               <article class = "menu">
+                <a href = "../index.jsp"><p class = "index">Index</p></a>
+                            <ul class = "mylist">
+                                <li class = "snow_link"><a href = "../snow/snow_1.jsp" style = "color:black"><label>Snow White</label></a></li>
+                                <li class = "mermaid_link"><a href = "../mermaid/mermaid_1.jsp" style = "color:black"><label>The Little Mermaid</label></a></li>
+                                <li class = "christmas_link"><a href = "../christmas/christmas_1.jsp" style = "color:black"><label>The Nightmare before Christmas</label></a></li>
+                                <li class = "rata_link"><a href = "../rata/rata_1.jsp" style = "color:black"><label>Ratatouille</label></a></li>
+                                <li class = "inside_link"><a href = "../inside/inside_1.jsp" style = "color:black"><label>Inside Out</label></a></li>
+                                <li class = "moana_link"><a href = "../moana/moana_1.jsp" style = "color:black"><label>Moana</label></a></li>
+                                <li class = "koko_link"><a href = "../koko/koko_1.jsp" style = "color:black"><label>Coco</label></a></li>
+                            </ul>
+                        </article>
+        
+               
+            </section>
+
+
+            
+
+               <section  class = "section_content" style = "margin-top: 3%">
+                    <article>
+                            <a href="../koko_img/La llorona  Coco Pixar  Full HD.mp4">
+                                <img src="../koko_img/adasda.jpg" width="30%" height="20%" align="left">
+                           </a>
+                        <a href = "https://youtu.be/QCNeohNeS3k"  class = "song"><label style = "margin: 1%; font-size:20pt">How Far I'll Go</label></a>
+                        <br><br>
+                        &nbsp; &nbsp;"Y aunque la vida me cueste, llorona, no dejaré de quererte No dejaré de quererte"<br>
+
+                        &nbsp; &nbsp;&nbsp;눈물 많은 여인이여, 삶이 나를 힘들게 할지라도 그대 향한 내사랑 멈추지 않으리<br>
+                    </article>
+              </section>
+              <!-- https://youtu.be/yg8116aeD7E -->
+            <section  class = "section_content" style = "margin-top: 3%">
+                  <article>
+                        <a href="../koko_img/Anthony Gonzalez Gael García Bernal - Un Poco Loco (From Coco).mp4">
+                            <img src="../koko_img/kkk.jpg" width="30%" height="20%" align="left">
+                       </a>
+                      <a href = "https://youtu.be/yg8116aeD7E"  class = "song"><label style = "margin: 2%; font-size:20pt">Un Poco Loco</label></a>
+                      <br><br>
+                      &nbsp; &nbsp;"The loco that you make me It is just un poco crazy"<br>
+                      &nbsp; &nbsp;&nbsp; 당신은 날 미치게 만들어 단지 조금 미쳤을 뿐이야!
+                  </article>
+            </section>
+            <!-- https://youtu.be/YexJzu9aSZ0 -->
+            <section  class = "section_content" style = "margin-top: 3%">
+                    <article>
+                            <a href="../koko_img/remember me (reunion)  Coco Pixar  Full HD.mp4">
+                                <img src="../koko_img/gfgfg.jpg" width="30%" height="20%" align="left">
+                           </a>
+                        <a href = "https://youtu.be/onc7BXwEBbQ" class = "song"><label style = "margin: 2%; font-size:20pt">Remember Me</label></a>
+                        <br><br>
+                        &nbsp; &nbsp;"Remember me Though I have to say goodbye Remember me"<br>
+                        &nbsp; &nbsp;&nbsp;날 기억해줘 작별인사를 해야 하지만 날 기억해줘
+                    </article>
+              </section>
+            
+              <footer>Copyright&copy;2018 3517 최민경 All rights reserved. </footer>
+</body>
+</html>

@@ -1,0 +1,1 @@
+<table class='type04'><tr><th scope='row' style='height:px;'>글제목</th><td>모아나 이스터에그 신기하네요!</td></tr><tr><th scope='row' style='height:40px;'>닉네임<td>마우이</td></tr><tr><th scope='row' style='height:200px;'>글내용<td>모아나 이스터에그에 빅히어로가 있다니 신기해요!!</td></tr></table>
